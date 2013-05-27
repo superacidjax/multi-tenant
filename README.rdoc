@@ -4,5 +4,4 @@ This is a Rails 3.2 Engine to enable multi-tenancy
 
 * currently in-progress and not ready for anything yet.
 * it uses Haml because ERB is about as un-Zen as it gets.
-* it uses Decent Exposure because exposing instance variables in your view is sloppy design.
 * this is an opinionated project and isn't for everyone.
