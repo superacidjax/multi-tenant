@@ -26,5 +26,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'warden'
   s.add_dependency 'decent_exposure'
   s.add_dependency 'haml-rails'
+  s.add_dependency "dynamic_form"
 
 end
