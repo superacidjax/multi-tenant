@@ -1,0 +1,7 @@
+%h2 Sign Up
+= form_for account do |f|
+  %p
+    = f.label :name
+    %br
+      = f.text_field :name
+  = f.submit
