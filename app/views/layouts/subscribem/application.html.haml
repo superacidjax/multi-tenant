@@ -2,10 +2,10 @@
 %html
   %head
     %title Subscribem
-    = stylesheet_link_tag    "subscribem/application", :media => "all"
+    = stylesheet_link_tag    "subscribem/application", media: "all"
     = javascript_include_tag "subscribem/application"
     = csrf_meta_tags
   %body
     - flash.each do|k,v|
-      %div{:class => "flash #{k}"}= v
+      %div{class: "flash #{k}"}= v
     = yield
