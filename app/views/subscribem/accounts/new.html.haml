@@ -10,16 +10,5 @@
     %br
     = f.text_field :subdomain
   = f.fields_for :owner do |owner|
-    %p
-      = owner.label :email
-      %br
-      = owner.text_field :email
-    %p
-      = owner.label :password
-      %br
-      = owner.password_field :password
-    %p
-      = owner.label :password_confirmation
-      %br
-      = owner.password_field :password_confirmation
+    = render 'subscribem/account/users/form', user: owner
     = f.submit
