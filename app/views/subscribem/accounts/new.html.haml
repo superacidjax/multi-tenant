@@ -4,6 +4,10 @@
     = f.label :name
     %br
     = f.text_field :name
+  %p
+    = f.label :subdomain
+    %br
+    = f.text_field :subdomain
   = f.fields_for :owner do |owner|
     %p
       = owner.label :email
