@@ -1,3 +1,7 @@
-= Subscribem
+= Multi-Tenant
 
-This project rocks and uses MIT-LICENSE.
+This is a Rails 3.2 Engine to enable multi-tenancy
+
+* currently in-progress and not ready for anything yet.
+
+= MIT-LICENSE.
