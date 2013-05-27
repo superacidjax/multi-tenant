@@ -2,7 +2,7 @@ require_dependency "subscribem/application_controller"
 
 module Subscribem
   class AccountsController < ApplicationController
-    expose (:account)
+    expose(:account)
 
     def new
       account.build_owner
