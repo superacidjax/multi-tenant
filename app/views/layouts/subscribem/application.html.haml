@@ -6,6 +6,8 @@
     = javascript_include_tag "subscribem/application"
     = csrf_meta_tags
   %body
+    - if user_signed_in?
+      Signed in as #{current_user.email}
     - flash.each do|k,v|
       %div{class: "flash #{k}"}= v
     = yield

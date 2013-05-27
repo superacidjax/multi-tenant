@@ -3,5 +3,18 @@
   %p
     = f.label :name
     %br
-      = f.text_field :name
-  = f.submit
+    = f.text_field :name
+  = f.fields_for :owner do |owner|
+    %p
+      = owner.label :email
+      %br
+      = owner.text_field :email
+    %p
+      = owner.label :password
+      %br
+      = owner.password_field :password
+    %p
+      = owner.label :password_confirmation
+      %br
+      = owner.password_field :password_confirmation
+    = f.submit
