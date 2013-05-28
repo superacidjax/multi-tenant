@@ -5,7 +5,7 @@ require "subscribem/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "MultiTenant"
+  s.name        = "acid_tenent"
   s.version     = Subscribem::VERSION
   s.authors     = ["Brian Dear"]
   s.email       = ["superacidjax@me.com"]
