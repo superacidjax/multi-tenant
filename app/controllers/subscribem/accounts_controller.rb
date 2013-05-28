@@ -11,7 +11,8 @@ module Subscribem
     def create
       account = Subscribem::Account.create_with_owner(params[:account])
       if account.valid?
-        force_authentication!(account, account.owner)
+        force_authentication!(account.owner)
+        account.create_schema
         flash[:success] = "You have signed up successfully."
         redirect_to subscribem.root_url(subdomain: account.subdomain)
       else
